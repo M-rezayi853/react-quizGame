@@ -1,0 +1,19 @@
+@import '../../sass/variables.scss';
+
+.gameBottom {
+  display: grid;
+
+  background-color: $color-white;
+  margin: .47rem 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: .3rem;
+  @include box-shadow-1;
+  height: 100%;
+  transition: all .3s;
+
+  &:hover {
+    @include box-shadow-2;
+    background-color: $color-white-dark;
+  }
+}

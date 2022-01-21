@@ -1,0 +1,51 @@
+@import '../../sass/variables.scss';
+
+.groupPopup {
+  direction: rtl;
+  font-size: .8rem;
+  display: grid;
+  align-content: center;
+
+  &__profile {
+    display: grid;
+    align-self: center;
+  }
+
+  &__top {
+    background-color: $color-primary;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+    display: flex;
+    border-radius: .3rem .3rem 0 0;
+    padding: .5rem 0;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: .5rem 0;
+  }
+
+  &__align {
+    display: grid;
+    align-items: center;
+  }
+
+  &__middle {
+    padding: .5rem;
+    background-color: $color-primary;
+    background-color: $color-white;
+    color: $color-black;
+  }
+  
+  &__description {
+    p {
+      font-size: 100%;
+    }
+  }
+
+  &__tab {
+    background-color: $color-primary-dark;
+    overflow: hidden;
+  }
+}

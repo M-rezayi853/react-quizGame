@@ -1,0 +1,49 @@
+@import '../../sass/variables.scss';
+
+.cartQuestionOptions {
+  display: grid;
+
+  padding: .5rem;
+  background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+  @include box-shadow-0;
+  border-radius: .5rem;
+  margin: 0 .5rem;
+
+  &:hover {
+    background-image: linear-gradient(to bottom left, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__space {
+    width: 100%;
+    height: 100%;
+    
+
+    &-left {
+      border-right: .1rem solid $color-primary-dark-dip;
+      border-bottom: .1rem solid $color-primary-dark-dip;
+    }
+
+    &-right {
+      border-bottom: .1rem solid $color-primary-dark-dip;
+    }
+
+    &-leftBottom {
+      border-right: .1rem solid $color-primary-dark-dip;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 6rem;
+    box-shadow: none;
+    font-size: 180%;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

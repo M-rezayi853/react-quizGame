@@ -1,0 +1,30 @@
+@import '../../sass/variables.scss';
+
+.acceleratorPackage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 12rem;
+  direction: rtl;
+
+  &__img {
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__coin {
+    background-color: $color-bg-dark;
+    background-color: $color-green;
+    border-radius: .3rem;
+    width: 90%;
+    padding: .1rem 0;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+  }
+}

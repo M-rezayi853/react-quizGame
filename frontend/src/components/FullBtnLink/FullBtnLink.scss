@@ -1,0 +1,65 @@
+@import '../../sass/variables.scss';
+
+.fullBtnLink {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &:hover {
+    .fullBtnLink__icon {
+      fill: $color-yellow-dark;
+
+      &-left {
+        fill: $color-yellow-dark;
+      }
+    }
+  }
+
+  &__span {
+    font-size: .45rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-black;
+    transition: all .3s;
+
+    &-left {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $color-yellow;
+    }
+  }
+
+  button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding: .5rem 0;
+  }
+
+  &.small {
+    button {
+      padding: 0;
+      height: 2rem;
+    }
+
+    .fullBtnLink__icon {
+      width: 1rem;
+      height: 1rem;
+  
+      &-left {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

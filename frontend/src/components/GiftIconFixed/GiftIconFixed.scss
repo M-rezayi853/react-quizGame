@@ -1,0 +1,37 @@
+@import '../../sass/variables.scss';
+@import '../../sass//animations.scss';
+@include animations;
+
+.giftIcon {
+  padding: 1rem;
+  background-image: linear-gradient(to bottom right, rgba($color-purple, .7), rgba($color-purple-dark, .7));
+  display: inline-block;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1.5rem;
+  z-index: 20;
+  cursor: pointer;
+  @include box-shadow-1;
+  transition: all .3s;
+
+  animation: vibration 2s 13s linear 2 both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  &:hover {
+    background-image: linear-gradient(to bottom left, rgba($color-purple, .9), rgba($color-purple-dark, .9));
+    @include box-shadow-2;
+
+    .giftIcon__icon {
+      fill: #fff;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 1.75rem;
+    fill: $color-light-1;
+  }
+}

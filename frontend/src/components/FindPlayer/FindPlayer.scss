@@ -1,0 +1,26 @@
+@import '../../sass/variables.scss';
+
+.findPlayer {
+
+  button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    padding: .5rem 0;
+    position: relative;
+  }
+
+  &__textTop, &__textBottom {
+    margin: .5rem 0;
+  }
+
+  &__textDate {
+    position: absolute;
+    top: .5rem;
+    right: .8rem;
+    direction: rtl;
+    font-size: 80%;
+  }
+}

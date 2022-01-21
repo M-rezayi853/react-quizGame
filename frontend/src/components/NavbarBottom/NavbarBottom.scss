@@ -1,0 +1,29 @@
+@import '../../sass/variables.scss';
+
+.navbarBottom {
+  border-top: 0.1rem solid $color-light-2;
+  position: fixed !important;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  background-color: $color-bg-dark;
+
+  &__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary;
+    padding: 0.5rem;
+  }
+
+  button {
+    border-radius: 50rem;
+  }
+}

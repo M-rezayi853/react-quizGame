@@ -1,0 +1,40 @@
+@import '../../sass/variables.scss';
+
+.cartHomeRight {
+  display: -ms-grid;
+  display: grid;
+
+  border-left: .1rem solid $color-primary-dark-dip;
+
+  &__div {
+
+    &-1 {
+      border-bottom: .1rem solid $color-primary-dark-dip;
+    }
+
+    &:hover {
+      .cartHomeRight__icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $color-light-1;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all .3s;
+  }
+
+  button {
+    padding: 1.5rem 1rem;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

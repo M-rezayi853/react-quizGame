@@ -1,0 +1,17 @@
+@import '../../sass/variables.scss';
+
+.cartHomeCenter {
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &__userName {
+    @include box-shadow-0;
+    background-color: $color-light-1;
+    color: #000;
+    padding: .3rem 0;
+    border-radius: .3rem;
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../sass/variables.scss';
+
+.recordScreen {
+  padding-bottom: 3.58rem;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__flex {
+    display: flex;
+    align-content: center;
+
+    margin: 1rem 0;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-light-2;
+
+    &-right {
+      fill: $color-primary;
+    }
+
+    &-record {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: $color-primary;
+    }
+  }
+
+  &__record {
+    display: flex;
+    align-self: center;
+    padding: .5rem;
+    // background-image: linear-gradient(to bottom right, rgba($color-secondary, 1), rgba($color-secondary-dark, 1));
+    background-color: $color-white;
+    border-radius: 50rem;
+    border-radius: 50rem;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    height: 5rem;
+    // border-radius: 200rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__text {
+    background-color: $color-light-2;
+    display: inline-block;
+    color: #000;
+    padding: .2rem 1rem;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../sass/variables.scss';
+
+.navbar {
+
+  button {
+    width: 100%;
+    font-size: .7rem;
+  }
+
+  &__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    width: 100%;
+    position: relative;
+  }
+
+  &__level,
+  &__levelHeart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__level {
+    position: relative;
+  }
+
+  &__levelSpan {
+    position: absolute;
+    left: 0.60rem;
+    top: .44rem;
+  }
+
+  &__levelHeart {
+    position: relative;
+  }
+
+  &__numHartSpan {
+    position: absolute;
+    left: 0.65rem;
+    top: .3rem;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $color-light-1;
+
+    &-small {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin: 0 0.3rem;
+    }
+
+    &-yellow {
+      fill: $color-yellow;
+      background-color: #252525;
+    }
+
+    &-purple {
+      fill: $color-purple;
+      background-color: #252525;
+    }
+  }
+
+  &__spanLeft {
+    margin-left: 8%;
+  }
+
+  &__spanRight {
+    margin-right: 8%;
+  }
+}

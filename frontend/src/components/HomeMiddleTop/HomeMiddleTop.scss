@@ -1,0 +1,38 @@
+@import '../../sass/variables.scss';
+
+.homeMiddleTop {
+  display: -ms-grid;
+  display: grid;
+
+  &__btn {
+    display: -ms-grid;
+    display: grid;
+
+    &:hover {
+      .homeMiddleTop__icon {
+        fill: $color-light-1;
+      }
+    }
+  }
+
+  &__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+    transition: all 0.3s;
+  }
+}

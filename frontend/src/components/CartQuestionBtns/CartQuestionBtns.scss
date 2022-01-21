@@ -1,0 +1,56 @@
+@import '../../sass/variables.scss';
+
+.cartQuestionBtns {
+  display: flex;
+  justify-content: center;
+  // background-color: $color-white;
+  padding: .5rem;
+  border-radius: .3rem;
+  width: 100%;
+  // @include box-shadow-1;
+
+  &__text {
+    color: $color-light-1;
+    border-radius: .3rem;
+    width: 90%;
+    font-size: 80%;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $color-light-1;
+    border-radius: .3rem;
+    border-radius: .8rem;
+  }
+
+  &__coin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+    background-color: $color-black;
+    border-radius: .3rem;
+  }
+
+  &__coinIcon {
+    fill: $color-yellow;
+    width: .8rem;
+    height: .8rem;
+  }
+
+  button {
+    height: 100%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 100%;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    @include box-shadow-0;
+    
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

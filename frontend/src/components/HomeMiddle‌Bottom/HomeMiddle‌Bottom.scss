@@ -1,0 +1,99 @@
+@import '../../sass/variables.scss';
+@import '../../sass/animations.scss';
+@include animations;
+
+.homeMiddle‌Bottom {
+  // margin-bottom: 1rem;
+
+  &__left {
+    background-color: $color-info;
+    border-radius: .3rem;
+    overflow: hidden;
+    @include box-shadow-1;
+
+    &:hover {
+      @include box-shadow-2;
+    }
+  }
+
+  &__leftTop,
+  &__leftBottom {
+    display: -ms-grid;
+    display: grid;
+
+    button {
+      padding: 1rem;
+
+      box-shadow: none;
+      border-radius: 0;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    &:hover {
+      .homeMiddle‌Bottom__icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__right {
+    display: -ms-grid;
+    display: grid;
+
+    height: 9rem;
+
+    animation: shake 2s 1.5s linear 2;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 30rem;
+
+    button {
+      height: 100%;
+    }
+
+    &:hover {
+      .homeMiddle‌Bottom__icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__flexLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  &__flexRight {
+    display: grid;
+    justify-items: center;
+
+    h5 {
+      margin: .5rem 0;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2.5rem;
+    fill: $color-light-1;
+    transition: all .3s;
+
+    &-right {
+      width: 3rem;
+      animation: hardShake 2s 6s linear 2;
+      backface-visibility: hidden;
+      perspective: 30rem;
+    }
+  }
+}

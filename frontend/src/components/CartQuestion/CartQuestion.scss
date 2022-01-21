@@ -1,0 +1,50 @@
+@import '../../sass/variables.scss';
+
+.cartQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: .5rem;
+
+  background-color: $color-secondary;
+  background-color: #eeeeee;
+  height: 35rem;
+  color: $color-black;
+  border-radius: .3rem;
+  @include box-shadow-2;
+
+  &__title {
+    font-size: 300%;
+    margin: 0 1rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: .5rem 0;
+  }
+
+  &__subject {
+    color: $color-light-1;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+    padding: .1rem 1rem;
+    border-radius: 50rem;
+  }
+
+  &__questionMaker {
+    color: $color-light-1;
+    background-image: linear-gradient(to bottom right, rgba($color-success, 1), rgba($color-success-dark, 1));
+    padding: .1rem 1rem;
+    border-radius: 50rem;
+  }
+}

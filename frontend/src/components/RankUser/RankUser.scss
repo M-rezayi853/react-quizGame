@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+.rankUser {
+  display: flex;
+  align-items: center;
+
+  &__userName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

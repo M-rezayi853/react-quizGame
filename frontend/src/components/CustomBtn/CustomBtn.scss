@@ -1,0 +1,120 @@
+@import '../../sass/variables.scss';
+
+.customBtn {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 0.3rem;
+  @include box-shadow-1;
+  transition: all 0.3s;
+  overflow: hidden;
+  background-color: transparent;
+
+  &.primary {
+    // background-color: $color-primary;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+  }
+
+  &.secondary {
+    // background-color: $color-secondary;
+    background-image: linear-gradient(to bottom right, rgba($color-secondary, 1), rgba($color-secondary-dark, 1));
+  }
+
+  &.success {
+    // background-color: $color-success;
+    background-image: linear-gradient(to bottom right, rgba($color-success, 1), rgba($color-success-dark, 1));
+  }
+
+  &.info {
+    // background-color: $color-info;
+    background-image: linear-gradient(to bottom right, rgba($color-info, 1), rgba($color-info-dark, 1));
+  }
+
+  &.blue {
+    // background-color: $color-blue;
+    background-image: linear-gradient(to bottom right, rgba($color-blue, 1), rgba($color-blue-dark, 1));
+  }
+
+  &.white {
+    background-color: $color-secondary;
+    background-color: #e4f9f5;
+    background-color: #eaeaea;
+    background-color: #e3e3e3;
+    background-color: #e4e3e3;
+    background-color: #f0f5f9;
+    background-color: #eeeeee;
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    // transform: translateY(-0.1rem);
+    @include box-shadow-2;
+
+    &.primary {
+      // background-color: $color-primary-dark;
+      background-image: linear-gradient(to bottom left, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+    }
+
+    &.secondary {
+      // background-color: $color-secondary-dark;
+      background-image: linear-gradient(to bottom left, rgba($color-secondary, 1), rgba($color-secondary-dark, 1));
+    }
+
+    &.success {
+      // background-color: $color-success-dark;
+      background-image: linear-gradient(to bottom left, rgba($color-success, 1), rgba($color-success-dark, 1));
+      color: #fff;
+    }
+
+    &.info {
+      // background-color: $color-info-dark;
+      background-image: linear-gradient(to bottom left, rgba($color-info, 1), rgba($color-info-dark, 1));
+    }
+
+    &.blue {
+      background-image: linear-gradient(to bottom left, rgba($color-blue, 1), rgba($color-blue-dark, 1));
+    }
+
+    &.white {
+      background-color: $color-white-dark;
+    }
+  }
+
+  &:active {
+    transform: translateY(0.2rem);
+    @include box-shadow-1;
+
+    &.primary {
+      background-color: $color-primary;
+    }
+
+    &.secondary {
+      background-color: $color-secondary;
+    }
+
+    &.success {
+      background-color: $color-success;
+    }
+
+    &.info {
+      background-color: $color-info;
+    }
+
+    &.blue {
+      background-color: $color-blue;
+    }
+
+    &.white {
+      background-color: $color-white;
+    }
+  }
+}

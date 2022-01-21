@@ -1,0 +1,35 @@
+@import '../../sass/variables.scss';
+
+.ranksScreen {
+  padding-bottom: 3.58rem;
+
+  &__link {
+    // background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // padding: .5rem 0;
+    border-radius: .3rem;
+    overflow: hidden;
+  }
+
+  &__tab  {
+    background-color: $color-info-dark;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+    // background-image: linear-gradient(to bottom right, rgba($color-secondary, 1), rgba($color-secondary-dark, 1));
+    background-image: linear-gradient(to bottom right, rgba($color-success, 1), rgba($color-success-dark, 1));
+    background-image: linear-gradient(to bottom left, rgba($color-info, 1), rgba($color-info-dark, 1));
+    background-image: linear-gradient(to bottom right, rgba($color-blue, 1), rgba($color-blue-dark, 1));
+    // background-color: $color-white-dark;
+    border-radius: .3rem;
+    // color: $color-black;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    height: 2.5rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

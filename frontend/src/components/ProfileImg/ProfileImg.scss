@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+
+.profileImg {
+  // padding: 0.5rem;
+  border-radius: 100rem;
+  transition: all 0.3s;
+  
+  &__img {
+    border-radius: 100%;
+    transition: all 0.3s;
+    border: .2rem solid $color-light-1;
+    @include box-shadow-1;
+
+    &:hover {
+      @include box-shadow-2;
+      cursor: pointer;
+      transform: translateY(-.1rem);
+    }
+
+    &:active {
+      transform: translateY(.1rem);
+    }
+  }
+
+  .verySmall {
+    width: 3rem;
+  }
+
+  .small {
+    width: 3.5rem;
+  }
+
+  .middle {
+    width: 4.5rem;
+  }
+}

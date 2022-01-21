@@ -1,0 +1,9 @@
+@import '../../sass/variables.scss';
+
+.cartQuestionTimer {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, rgba($color-info, 1), rgba($color-info-dark, 1));
+  padding: 1rem 0;
+  border-radius: .3rem;
+}

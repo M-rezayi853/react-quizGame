@@ -1,0 +1,21 @@
+@import '../../sass/variables.scss';
+
+.homeTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  // background-color: $color-primary;
+  background-image: linear-gradient(to bottom right, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+  margin: .47rem 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: .3rem;
+  @include box-shadow-1;
+  transition: all .3s;
+
+  &:hover {
+    @include box-shadow-2;
+    background-image: linear-gradient(to bottom left, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+  }
+}

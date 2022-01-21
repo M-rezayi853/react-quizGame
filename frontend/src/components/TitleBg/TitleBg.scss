@@ -1,0 +1,20 @@
+@import '../../sass//variables.scss';
+
+.titleBg {
+  direction: rtl;
+  
+  &__title {
+    background-color: $color-bg-light;
+    border-radius: .3rem;
+    padding: .5rem 0;
+    @include box-shadow-1;
+  }
+
+  &.mgt {
+    margin-top: 1rem;
+  }
+
+  &.mgb {
+    margin-bottom: 1rem;
+  }
+}

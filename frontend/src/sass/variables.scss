@@ -1,0 +1,58 @@
+
+// FONT VARIABLES
+$font-primary-fa: 'iranyekan';
+
+// COLORS
+$color-primary: #3f859e;
+$color-primary-dark: #134355;
+$color-primary-dark-dip: #1b4352;
+$color-secondary: #ffffff;
+$color-secondary-dark: #aa9987;
+$color-light-1: #faf8ef;
+$color-light-2: #e0dcd7;
+$color-success: #00ff88;
+$color-success-dark: #086338;
+$color-info: #01d6d6;
+$color-info-dark: #025c5c;
+$color-bg: #350b40;
+$color-bg: #101830;
+$color-bg: #181030;
+
+$color-bg-light: #480e57;
+$color-bg-dark: #280830;
+$color-blue: #344fa1;
+$color-blue: #4d81e0;
+$color-blue-dark: #2f468b;
+$color-blue-dark: #133696;
+$color-yellow: #f0c929;
+$color-yellow-dark: #c0a021;
+$color-purple: #ff0062;
+$color-purple-dark: #921149;
+$color-green: #32c90c;
+$color-green-dark: #28a009;
+$color-gray: #8f8f8f;
+$color-red: #f73859;
+$color-black: #313131;
+$color-black-dark: #202020;
+$color-white: #eeeeee;
+$color-white-dark: #ffff;
+
+// RESPONSIVE BREAKPONITS
+$bp-larg: 81.25em;     //  1300px/16px = em
+$bp-medium: 62.5em;     //  1000px/16px = em
+$bp-small: 50em;     //  800px/16px = em
+$bp-very-small: 37.5em;     //  600px/16px = em
+$bp-thin: 20.625em;     //  330px/16px = em
+$bp-very-thin: 18.75em;     //  300px/16px = em 
+
+@mixin box-shadow-0 { 
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.3);
+}
+
+@mixin box-shadow-1 { 
+  box-shadow: 0 0.75rem 1.5rem rgba(#000, 0.5);
+}
+
+@mixin box-shadow-2 { 
+  box-shadow: 0 2rem 2rem rgba(#000, 0.6);
+}

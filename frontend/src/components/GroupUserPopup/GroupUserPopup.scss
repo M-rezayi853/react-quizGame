@@ -1,0 +1,10 @@
+@import '../../sass/variables.scss';
+
+.groupUserPopup {
+  background-color: $color-white;
+  background-color: $color-info-dark;
+  // color: $color-black;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+}
